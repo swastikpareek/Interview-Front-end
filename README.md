@@ -1,37 +1,32 @@
-# Interview: Front-end
+# Axelerant: Front-end Interview
 
 ### Background
 
-This exercise is to test your Front-end skills. In this repository you will find:
+This exercise is to test your Front-end skills. You have to take the following [designs](./designs) and convert them to a website.
 
-1.  Project installation that you can setup with the instruction
-    shared below.
-2.  Link to Designs (PSDs and JPG files): [Here](https://drive.google.com/drive/folders/1fCEq4JLqH5taSY21VS5vm3AjkOhOlVeH?usp=sharing).
+### Before you start
 
-Installation should configure everything you would need to get started theming based on the PSDs.
-
-### Important!!!
-
-- Please avoid using Bootstrap or similar CSS frameworks
-
-### Setup Prerequisites
-
-- [Node.js](https://nodejs.org/en/)
-- Browser: [Chrome](https://www.google.com/chrome/) or [Firefox](https://www.mozilla.org/en-US/firefox/new/)
-- Text editor: [VSCode](https://code.visualstudio.com/) or [Atom](https://atom.io/)
-
-### Installation
-
-- Install project dependencies using: `npm install` or `yarn install`.
-- Install `gulp-cli` globally using `npm install -g gulp-cli`.
-
-### Development
-
-- Start the server using `gulp server`. This will also compile assets for you.
 - Review the designs shared with you.
-- Break the components as per [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/)
-  into multiple templates that would be placed in the `templates` directory.
-- Following the same pattern Sass can be broken into partials that can be placed in `sass` directory. For naming classes follow [SMACSS](https://smacss.com/) and [BEM](http://getbem.com/).
+- Break the components as per [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/).
+  - Following the same pattern Sass can be broken into partials that can be placed in `sass` directory. For naming classes follow [SMACSS](https://smacss.com/) and [BEM](http://getbem.com/).
+- Please avoid using Bootstrap, Foundation, or similar CSS frameworks
+
+### How to start
+
+- Click on this button to open the sandbox  
+  [![Edit axelerant-frontend-exercise](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/axelerant-frontend-exercise-8p9ke?fontsize=14)
+- Login to Codesandbox using the `Sign in with GitHub` button on the top right corner.
+  ![Sign in with GitHub on Codesandbox](https://i.imgur.com/qfgak0X.png)
+- You can start working on the implementation as per designs
+- To update the markup update the `index.html` file
+- You can write styles in `src/sass/styles.scss` and create new partials in that directory.
+- You can add JS in `src/js/index.js`
+
+#### But I want to use a framework like React/Angular?
+
+- Feel free to do so!
+- Create a new sandbox on Codesandbox with your framework of choice
+  ![Create a new sandbox with framework of your choice](https://i.imgur.com/Xfw5D4m.png)
 
 #### Brownie Points for:
 
@@ -40,6 +35,5 @@ Installation should configure everything you would need to get started theming b
 - Keeping things performant
 
 ### Submission
-* Set up your github.com account if you don't already have one.
-* Clone the repository
-* Push your changes as a public repo in GitHub and submit the link
+
+- After you are done with the exercise share the link to your forked sandbox to us.
