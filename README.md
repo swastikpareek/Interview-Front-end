@@ -1,8 +1,8 @@
-# Axelerant: React Interview
+# Axelerant: Senior Front-end Developer Interview
 
 ### Background
 
-This exercise is to test your React skills. You have to take the following requirements and convert them to an Event booking application.
+This exercise is to test your front-end skills. You have to take the following requirements and convert them to an Event booking application.
 
 ### Requirements: Event booking application
 
