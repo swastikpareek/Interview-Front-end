@@ -2,10 +2,41 @@
  * Contains variable declerations.
  */
 
-$white:                        #fff;
+// Colors
+$white:                                    #fff;
+$black:                                    #2e2e2e;
+$jet-black:                                #171513;
+$dark-grey:                                #413d3c;
+$light-grey:                               #f7f7f7;
+$primary:                                  #ec3c03;
+$healine-color:                            #4d4845;
+$headline-sub-color:                       #4b4743;
+$text-color-testimonial:                   #81736f;
+$text-color:                               #484440;
 
-$font-family-base:             'Lucida Sans', 'sans-serif';
-$line-height-base:              1.5;
-$font-size-base:                16px;
+// typography
+$font-family-base:                         'Lucida Sans', 'sans-serif';
+$line-height-base:                         1.5;
+$font-size-base:                           16px;
+$base-spacing:                             20px;
+$heading-bottom-spacing:                   $base-spacing;
+$transition:                               0.2s ease-in all;
 
-$body-bg:                      $white;
+// Body
+$body-bg:                                  $white;
+
+
+// Header
+$header-links-text-color:                  #afa5a3;
+$header-links-spacing:                     $base-spacing;
+$header-lateral-padding:                   $base-spacing 0;
+
+// Bannner
+$banner-max-width:                         1440px;
+$banner-immage-placehoder-spacing:         (697/1366) * 100%;
+$banner-headline-max-width:                540px;
+$banner-services-dimension:                180px;
+$banner-services-lateral-spacing:          $base-spacing;
+$banner-services-text-spacing:             $base-spacing / 2;
+$banner-service-border:                    $dark-grey;
+$banner-text-color:                        $white;

@@ -1,0 +1,28 @@
+.header {
+  background-color: $jet-black;
+  padding: $header-lateral-padding;
+
+  &__account-menu {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__account-menu-items {
+    margin: 0 $header-links-spacing;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__account-menu-links {
+    color: $header-links-text-color;
+    text-decoration: none;
+    transition: $transition;
+
+    &:hover,
+    &.active {
+      color: $white;
+    }
+  }
+}

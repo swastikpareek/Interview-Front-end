@@ -1,0 +1,43 @@
+/**
+ * Contains Banner related css
+ */
+.banner {
+  margin: 0 auto;
+  max-width: $banner-max-width;
+  position: relative;
+
+  &__image {
+    background-image: url('/build/assets/images/banner-image.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: $banner-immage-placehoder-spacing;
+  }
+
+  &__content {
+    color: $banner-text-color;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    transform: translate(-50%);
+  }
+
+  &__content-heading {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $banner-headline-max-width;
+    text-align: center;
+  }
+
+  &__content-graphics {
+    border: 1px solid $banner-service-border;
+    height: $banner-services-dimension;
+    margin: 0 $banner-services-lateral-spacing;
+    width: $banner-services-dimension;
+  }
+
+  &__content-graphics-text {
+    margin: $banner-services-text-spacing 0 0 0;
+  }
+}

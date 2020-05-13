@@ -9,7 +9,59 @@
 </head>
 
 <body>
-  <h1> Hello World! </h1>
+  <header class="header">
+    <div class="container d-flex flex-row align-center justify-space-between">
+      <div class="header__logo">
+        <img src="build/assets/images/logo.png" />
+      </div>
+      <div>
+        <ul class="d-flex flex-row align-center header__account-menu">
+          <li class="header__account-menu-items">
+            <a class="header__account-menu-links" href="#">About</a>
+          </li>
+          <li class="header__account-menu-items">
+            <a class="header__account-menu-links" href="#">Services</a>
+          </li>
+          <li class="header__account-menu-items">
+            <a class="header__account-menu-links" href="#">Solutions</a>
+          </li>
+          <li class="header__account-menu-items">
+            <a class="header__account-menu-links" href="#">Blog</a>
+          </li>
+          <li class="header__account-menu-items">
+            <a class="header__account-menu-links btn btn--primary" href="#">
+              <i class="icon icon--get-in-touch"></i>
+              Get in touch
+          </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="banner">
+    <div class="banner__image"></div>
+    <div class="banner__content">
+      <h1 class="banner__content-heading">Integer bibendum sit amet acrul vel egestas</h1>
+      <div class="d-flex justify-center">
+        <div class="banner__content-graphics d-flex flex-column align-center justify-center">
+          <img class="banner__content-image" src="/build/assets/images/service-icon-1.png"/>
+          <p class="banner__content-graphics-text">Service Name</p>
+        </div>
+        <div class="banner__content-graphics d-flex flex-column align-center justify-center">
+          <img class="banner__content-image" src="/build/assets/images/service-icon-2.png"/>
+          <p class="banner__content-graphics-text">Service Name</p>
+        </div>
+        <div class="banner__content-graphics d-flex flex-column align-center justify-center">
+          <img class="banner__content-image" src="/build/assets/images/service-icon-3.png"/>
+          <p class="banner__content-graphics-text">Service Name</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <div class="container" style="background-color: red" >
+    <h1> Hello World! </h1>
+  </div>
   <script src="build/js/main.js">
   </script>
 </body>

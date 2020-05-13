@@ -1,0 +1,57 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.btn {
+  align-items: center;
+  border-radius: 16px;
+  color: $white !important;
+  display: inline-flex;
+  padding: 4px 20px;
+}
+
+.btn--primary {
+  background-color: $primary;
+}
+
+.icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  height: $line-height-base * 1rem;
+  width: $line-height-base * 1rem;
+}
+
+.icon--get-in-touch {
+  background-image: url('/build/assets/images/get-in-touch.svg');
+  margin-right: 5px;
+  position: relative;
+  top: 1px;
+}
