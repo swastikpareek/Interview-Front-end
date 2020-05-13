@@ -36,17 +36,30 @@
   flex-grow: 1;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 // Buttons
 .btn {
   align-items: center;
+  appearance: none;
+  border: 0;
   border-radius: $button-border-radius;
   color: $white !important;
   display: inline-flex;
+  font-size: $button-font-size;
+  line-height: $button-line-height;
   padding: $button-padding-x $button-padding-y;
 }
 
 .btn--primary {
   background-color: $primary;
+}
+
+.btn--big {
+  border-radius: $button-border-radius;
+  padding: $button-big-padding-x $button-big-padding-y;
 }
 
 // Icons

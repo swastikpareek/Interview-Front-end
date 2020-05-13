@@ -14,7 +14,7 @@ $headline-sub-color:                                  #4b4743;
 $text-color-testimonial:                              #81736f;
 $text-color:                                          #484440;
 
-// typography
+// Typography
 $font-family-base:                                    'Lucida Sans', 'sans-serif';
 $line-height-base:                                    1.5;
 $line-height-small:                                   1.333333;
@@ -27,22 +27,32 @@ $transition:                                          0.2s ease-in all;
 $button-padding-y:                                    $base-spacing;
 $button-padding-x:                                    $base-spacing / 5;
 $button-border-radius:                                1rem;
-
-// Typography
+$button-line-height:                                  $line-height-base;
+$button-font-size:                                    $font-size-base;
+$button-big-padding-x:                                0.4 * $base-spacing;
+$button-big-padding-y:                                $base-spacing * 1.5;
+$button-border-radius:                                $base-spacing;
 $body-bg:                                             $white;
 $body-text-color:                                     $text-color;
 $line-height-headline:                                $line-height-small;
 $light-bg:                                            $light-grey;
-
+$full-bleed-max-width:                                1440px;
+$input-border-color:                                  #8e9091;
+$input-line-height:                                   $line-height-base;
+$input-font-size:                                     $font-size-base;
+$input-background-color:                              $white;
+$input-padding:                                       $base-spacing * 0.25 $base-spacing * 0.5;
+$input-radius:                                        $base-spacing * 0.25;
 
 // Header
+$header-bg-color:                                     $jet-black;
 $header-links-text-color:                             #afa5a3;
 $header-links-spacing:                                $base-spacing;
 $header-lateral-padding:                              $base-spacing 0;
 
 // Bannner
-$banner-max-width:                                    1440px;
-$banner-immage-placehoder-spacing:                    (697/1366) * 100%;
+$banner-max-width:                                    $full-bleed-max-width;
+$banner-image-placehoder-spacing:                     (697/1366) * 100%;
 $banner-headline-max-width:                           540px;
 $banner-services-dimension:                           180px;
 $banner-services-lateral-spacing:                     $base-spacing;
@@ -75,3 +85,13 @@ $testimonial-profile-info-left-spacing:               $base-spacing * 0.5;
 $testimonial-profile-name-size:                       $font-size-large;
 $testimonial-profile-bio-size:                        $font-size-small;
 $testimonial-text-color:                              $text-color-testimonial;
+
+// Contact section
+$contact-max-width:                                   $full-bleed-max-width;
+$contact-image-placehoder-spacing:                    (485/1366) * 100%;
+$contact-text-color:                                  $white;
+$contact-sub-heading-font-size:                       $font-size-large;
+
+// Footer
+$footer-bg-color:                                     $jet-black;
+$footer-text-color:                                   #8c8482;

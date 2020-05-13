@@ -1,0 +1,57 @@
+/**
+ * Contains Banner related css
+ */
+.contact {
+  margin: 0 auto;
+  max-width: $contact-max-width;
+  position: relative;
+
+  &__image {
+    background-image: url('/build/assets/images/contact-box-bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: $contact-image-placehoder-spacing;
+  }
+
+  &__content {
+    color: $contact-text-color;
+    left: 50%;
+    max-width: 800px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  &__title,
+  &__headline {
+    color: inherit;
+    margin: 0;
+  }
+
+  &__title {
+    margin: 0 0 5px;
+  }
+
+  &__headline {
+    font-size: $contact-sub-heading-font-size;
+  }
+
+  &__form {
+    margin-top: 30px;
+  }
+
+  &__form-container {
+    margin: 0 -10px;
+
+    .form-item {
+      padding: 10px;
+    }
+
+    .form-item--input {
+      flex-basis: 33.33333%;
+    }
+  }
+}

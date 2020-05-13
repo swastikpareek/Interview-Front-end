@@ -1,0 +1,11 @@
+.footer {
+  background-color: $footer-bg-color;
+  color: $footer-text-color;
+  padding: 30px 0;
+
+  &__follow-us {
+    img {
+      margin-left: 10px;
+    }
+  }
+}

@@ -12,7 +12,7 @@
   <header class="header">
     <div class="container d-flex flex-row align-center justify-space-between">
       <div class="header__logo">
-        <img src="build/assets/images/logo.png" />
+        <img src="build/assets/images/logo.png" title="logo"/>
       </div>
       <div>
         <ul class="d-flex flex-row align-center header__account-menu">
@@ -44,15 +44,15 @@
       <h1 class="banner__content-heading">Integer bibendum sit amet acrul vel egestas</h1>
       <div class="d-flex justify-center">
         <div class="banner__content-graphics d-flex flex-column align-center justify-center">
-          <img class="banner__content-image" src="/build/assets/images/service-icon-1.png"/>
+          <img class="banner__content-image" title="Service Name 1" src="/build/assets/images/service-icon-1.png"/>
           <p class="banner__content-graphics-text">Service Name</p>
         </div>
         <div class="banner__content-graphics d-flex flex-column align-center justify-center">
-          <img class="banner__content-image" src="/build/assets/images/service-icon-2.png"/>
+          <img class="banner__content-image" title="Service Name 2" src="/build/assets/images/service-icon-2.png"/>
           <p class="banner__content-graphics-text">Service Name</p>
         </div>
         <div class="banner__content-graphics d-flex flex-column align-center justify-center">
-          <img class="banner__content-image" src="/build/assets/images/service-icon-3.png"/>
+          <img class="banner__content-image" title="Service Name 3" src="/build/assets/images/service-icon-3.png"/>
           <p class="banner__content-graphics-text">Service Name</p>
         </div>
       </div>
@@ -65,7 +65,7 @@
         <p> In maximus euismod egestas. Fusce tincidunt posuere est non elementum. Vivamus tincidunt eleifend nisl et gravida. Aenean in lorem ultrices, pellentesque augue eu, mattis est. Praesent sed volutpat nibh. Morbi faucibus tortor sed neque vulputate hendrerit. Sed aliquam mattis purus eleifend consectetur. Nulla mollis non enim non tempus. </p>
       </div>
       <div class="flex-grow-full">
-        <img src="/build/assets/images/call-out.jpg">
+        <img title="Map" src="/build/assets/images/call-out.jpg">
       </div>
     </div>
   </section>
@@ -78,7 +78,7 @@
             <p>Mauris at quam at mauris venenatis eleifend. Nullam eleifend odio a pretium dignissim. Aenean non rhoncus quam.</p>
           </div>
           <div class="testimonials__profile d-flex flex-row align-center">
-            <img class="testimonials__profile-icon" src="/build/assets/images/profile-icon.png" />
+            <img title="Client Name" class="testimonials__profile-icon" src="/build/assets/images/profile-icon.png" />
             <div class="testimonials__profile-info">
               <div class="testimonials__profile-name">CLIENT NAME</div>
               <div class="testimonials__profile-bio">Position, ORG</div>
@@ -90,7 +90,7 @@
             <p>Nunc ut ipsum iaculist dictum magna id, lacinia ante. Nulla facilisi. Integer lobortis in risus eget volutpat. Donec interdum elit eget quam aliquam sodales. Vestibulum auctor auctor finibus.</p>
           </div>
           <div class="testimonials__profile d-flex flex-row align-center">
-            <img class="testimonials__profile-icon" src="/build/assets/images/profile-icon.png" />
+            <img title="Client Name" class="testimonials__profile-icon" src="/build/assets/images/profile-icon.png" />
             <div class="testimonials__profile-info">
               <div class="testimonials__profile-name">CLIENT NAME</div>
               <div class="testimonials__profile-bio">Position, ORG</div>
@@ -103,7 +103,7 @@
             <div class="testimonials__message-box-icon"></div>
           </div>
           <div class="testimonials__profile d-flex flex-row align-center">
-            <img class="testimonials__profile-icon" src="/build/assets/images/profile-icon.png" />
+            <img title="Client Name" class="testimonials__profile-icon" src="/build/assets/images/profile-icon.png" />
             <div class="testimonials__profile-info">
               <div class="testimonials__profile-name">CLIENT NAME</div>
               <div class="testimonials__profile-bio">Position, ORG</div>
@@ -113,11 +113,46 @@
       </div>
     </div>
   </section>
-  <div class="container" style="background-color: red" >
-    <h1> Hello World! </h1>
-  </div>
-  <script src="build/js/main.js">
-  </script>
+  <section class="contact">
+    <div class="contact__image"></div>
+    <div class="contact__content">
+      <div class="text-center contact__headline">
+        <h2 class="contact__title"> Convinced To Work With Us? </h2>
+        <p class="contact__headline">Company has helped agencies to keep their promises with clients since 2005.</h2>
+      </div>
+      <form class="contact__form">
+        <div class="contact__form-container d-flex flex-wrap">
+          <div class="form-item flex-grow-full form-item--input">
+            <input type="text" placeholder="Fullname"/>
+          </div>
+          <div class="form-item flex-grow-full form-item--input">
+            <input type="email" placeholder="Email Address"/>
+          </div>
+          <div class="form-item flex-grow-full form-item--input">
+            <input type="phone" placeholder="Phone Number"/>
+          </div>
+          <div class="form-item flex-grow-full form-item--textarea">
+            <textarea placeholder="Messages in brief"></textarea>
+          </div>
+        </div>
+        <button class="btn btn--primary btn--big" type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container d-flex align-center justify-space-between">
+      <div class="footer__copyright">
+        © 2017 Company. All Rights Reserved.
+      </div>
+      <div class="footer__follow-us d-flex align-center">
+        <span> Follow us on:</span>
+        <img title="Follow on facebook" src="/build/assets/images/follow-facebook.png"/>
+        <img title="Follow on Linked In" src="/build/assets/images/follow-linkedin.png"/>
+        <img title="Follow on twitter" src="/build/assets/images/follow-twitter.png"/>
+      </div>
+    </div>
+  </footer>
+  <script src="build/js/main.js" />
 </body>
 
 </html>
