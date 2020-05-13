@@ -1,0 +1,87 @@
+// Layout
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+// Flexbox
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-grow-full {
+  flex-grow: 1;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+// Buttons
+.btn {
+  align-items: center;
+  appearance: none;
+  border: 0;
+  border-radius: $button-border-radius;
+  color: $white !important;
+  display: inline-flex;
+  font-size: $button-font-size;
+  line-height: $button-line-height;
+  padding: $button-padding-x $button-padding-y;
+}
+
+.btn--primary {
+  background-color: $primary;
+}
+
+.btn--big {
+  border-radius: $button-border-radius;
+  padding: $button-big-padding-x $button-big-padding-y;
+}
+
+// Icons
+.icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  height: $line-height-base * 1rem;
+  width: $line-height-base * 1rem;
+}
+
+.icon--get-in-touch {
+  background-image: url('/build/assets/images/get-in-touch.svg');
+  margin-right: 5px;
+  position: relative;
+  top: 1px;
+}
+
+// Miscellaneous
+.light-bg {
+  background-color: $light-bg;
+}
+
+.text-center {
+  text-align: center;
+}

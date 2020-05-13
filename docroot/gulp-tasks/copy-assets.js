@@ -3,12 +3,19 @@
  */
 
 const gulp = require('gulp');
+const merge = require('merge-stream');
 
 module.exports = () => {
-  return gulp.src('./node_modules/jquery/dist/jquery.min.js')
-    .pipe(gulp.dest('./build/vendor'))
-    .pipe(gulp.src('./src/assets/fonts/*'))
-    .pipe(gulp.dest('./build/assets/fonts'))
-    .pipe(gulp.src('./src/assets/images/*'))
-    .pipe(gulp.dest('./build/assets/images'));
+  const copyAssets = gulp.src([
+    './src/assets/*/**'
+  ], {
+    'base': './src'
+  })
+    .pipe(gulp.dest('build'));
+  const copyjQuery = gulp.src([
+    './node_modules/jquery/dist/jquery.min.js'
+  ])
+    .pipe(gulp.dest('build/vendor'));
+
+  return merge(copyAssets, copyjQuery);
 };
