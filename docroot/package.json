@@ -1,0 +1,88 @@
+{
+  "name": "swastik-interview-fe",
+  "version": "1.0.0",
+  "description": "Simple setup for rendering single page",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "engines": {
+    "node": "12.7.0",
+    "npm": "6.10.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "semistandard --fix",
+      "git add"
+    ],
+    "*.scss": [
+      "stylelint --fix",
+      "git add"
+    ]
+  },
+  "semistandard": {
+    "ignore": [
+      "build/vendors"
+    ],
+    "globals": [
+      "Drupal",
+      "jQuery"
+    ]
+  },
+  "stylelint": {
+    "extends": "stylelint-config-sass-guidelines",
+    "plugins": [
+      "stylelint-order",
+      "stylelint-scss"
+    ],
+    "rules": {
+      "selector-class-pattern": null,
+      "max-nesting-depth": 3,
+      "no-extra-semicolons": true,
+      "no-duplicate-selectors": true,
+      "selector-no-qualifying-type": [
+        true,
+        {
+          "ignore": [
+            "class"
+          ]
+        }
+      ],
+      "scss/dollar-variable-colon-space-after": "at-least-one-space",
+      "order/order": [
+        [
+          "custom-properties",
+          "dollar-variables",
+          "declarations",
+          "rules",
+          {
+            "type": "at-rule",
+            "name": "include"
+          }
+        ]
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swastikpareek/Interview-Front-end.git"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/swastikpareek/Interview-Front-end#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-uglify": "^3.0.2",
+    "husky": "^4.2.5",
+    "jquery": "^3.5.1",
+    "lint-staged": "^10.2.2",
+    "readable-stream": "^3.6.0",
+    "semistandard": "^12.0.1",
+    "stylelint": "^13.3.0",
+    "stylelint-config-sass-guidelines": "^7.0.0"
+  }
+}

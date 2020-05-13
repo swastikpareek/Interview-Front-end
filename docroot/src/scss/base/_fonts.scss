@@ -1,0 +1,14 @@
+/**
+ * Contains font declerations.
+ */
+
+
+@font-face {
+  font-family: 'Lucida Sans';
+  font-style: normal;
+  font-weight: normal;
+
+  src: url('../assets/fonts/LucidaSans.ttf') format('truetype'),
+    url('../assets/fonts/LucidaSans.woff') format('woff'),
+    url('../assets/fonts/LucidaSans.woff2') format('woff2'); /* Modern Browsers */
+}
