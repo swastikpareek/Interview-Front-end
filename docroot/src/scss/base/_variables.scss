@@ -22,6 +22,7 @@ $font-size-base:                                      16px;
 $font-size-small:                                     14px;
 $font-size-large:                                     18px;
 $base-spacing:                                        20px;
+$base-spacing-small:                                  15px;
 $heading-bottom-spacing:                              $base-spacing;
 $transition:                                          0.2s ease-in all;
 $button-padding-y:                                    $base-spacing;
@@ -44,6 +45,9 @@ $input-background-color:                              $white;
 $input-padding:                                       $base-spacing * 0.25 $base-spacing * 0.5;
 $input-radius:                                        $base-spacing * 0.25;
 $textarea-min-height:                                 106px;
+$container-width:                                     1200px;
+$container-sideline-padding:                          $base-spacing;
+$container-sideline-padding-small:                    $base-spacing-small;
 
 // Header
 $header-bg-color:                                     $jet-black;
@@ -55,6 +59,7 @@ $header-lateral-padding:                              $base-spacing 0;
 $banner-max-width:                                    $full-bleed-max-width;
 $banner-image-placehoder-spacing:                     (697/1366) * 100%;
 $banner-headline-max-width:                           540px;
+$banner-image-min-height:                             600px;
 $banner-services-dimension:                           180px;
 $banner-services-lateral-spacing:                     $base-spacing;
 $banner-services-text-spacing:                        $base-spacing / 2;
@@ -92,6 +97,9 @@ $contact-max-width:                                   $full-bleed-max-width;
 $contact-image-placehoder-spacing:                    (485/1366) * 100%;
 $contact-text-color:                                  $white;
 $contact-sub-heading-font-size:                       $font-size-large;
+$contact-sideline-spacing:                            $container-sideline-padding-small;
+$contact-content-container-width:                     800px + (2 * $contact-sideline-spacing);
+$contact-content-container-min-height:                480px;
 
 // Footer
 $footer-bg-color:                                     $jet-black;

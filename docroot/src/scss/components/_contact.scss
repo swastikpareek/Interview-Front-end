@@ -11,13 +11,16 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: $contact-content-container-min-height;
     padding-top: $contact-image-placehoder-spacing;
   }
 
   &__content {
     color: $contact-text-color;
     left: 50%;
-    max-width: 800px;
+    max-width: $contact-content-container-width;
+    padding-left: $contact-sideline-spacing;
+    padding-right: $contact-sideline-spacing;
     position: absolute;
     text-align: center;
     top: 50%;

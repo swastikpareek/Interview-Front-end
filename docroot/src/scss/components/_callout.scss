@@ -4,4 +4,12 @@
   &__headline {
     margin-bottom: $callout-headline-margin-bottom;
   }
+
+  &__section {
+    flex-basis: 50%;
+
+    img {
+      max-width: 100%;
+    }
+  }
 }

@@ -2,6 +2,7 @@
  * Main css file. Contains all imports of the partials.
  */
 
+@import 'breakpoint';
 @import 'base/**';
 @import 'boilerplate/**';
 @import 'components/**';
