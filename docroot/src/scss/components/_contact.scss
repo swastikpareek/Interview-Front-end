@@ -1,9 +1,9 @@
 /**
  * Contains Banner related css
  */
+
 .contact {
   margin: 0 auto;
-  max-width: $contact-max-width;
   position: relative;
 
   &__image {
@@ -17,6 +17,10 @@
 
     @include breakpoint($mobile) {
       min-height: $contact-content-container-min-height;
+    }
+
+    @include breakpoint($desktop) {
+      padding-top: 0;
     }
   }
 

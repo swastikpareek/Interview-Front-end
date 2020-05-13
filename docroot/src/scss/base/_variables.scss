@@ -38,7 +38,6 @@ $body-bg:                                             $white;
 $body-text-color:                                     $text-color;
 $line-height-headline:                                $line-height-small;
 $light-bg:                                            $light-grey;
-$full-bleed-max-width:                                1440px;
 $input-border-color:                                  #8e9091;
 $input-line-height:                                   $line-height-base;
 $input-font-size:                                     $font-size-base;
@@ -81,9 +80,9 @@ $header-hamburger-close-icon-alignment-y:             $base-spacing-small;
 $header-hamburger-close-icon-size:                    16px;
 
 // Bannner
-$banner-max-width:                                    $full-bleed-max-width;
 $bannner-sideline-spacing:                            $container-sideline-padding-small;
 $banner-image-placehoder-spacing:                     (697/1366) * 100%;
+$banner-image-max-height:                             700px;
 $banner-headline-max-width:                           540px;
 $banner-image-min-height:                             600px;
 $banner-services-dimension:                           180px;
@@ -124,14 +123,13 @@ $testimonial-profile-bio-size:                        $font-size-small;
 $testimonial-text-color:                              $text-color-testimonial;
 
 // Contact section
-$contact-max-width:                                   $full-bleed-max-width;
 $contact-image-placehoder-spacing:                    (485/1366) * 100%;
 $contact-text-color:                                  $white;
 $contact-sub-heading-font-size:                       $font-size-large;
 $contact-sideline-spacing:                            $container-sideline-padding-small;
 $contact-content-container-width:                     800px + (2 * $contact-sideline-spacing);
 $contact-content-container-min-height-mobile:         675px;
-$contact-content-container-min-height:                480px;
+$contact-content-container-min-height:                485px;
 $contact-form-submit-mobile-top-spacing:              $base-spacing;
 
 // Footer

@@ -4,7 +4,6 @@
 .banner {
   margin: 0 auto;
   margin-top: $header-height;
-  max-width: $banner-max-width;
   position: relative;
 
   &__image {
@@ -13,8 +12,13 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    max-height: $banner-image-max-height;
     min-height: $banner-image-min-height;
     padding-top: $banner-image-placehoder-spacing;
+
+    @include breakpoint($desktop) {
+      padding-top: 0;
+    }
   }
 
   &__content {
