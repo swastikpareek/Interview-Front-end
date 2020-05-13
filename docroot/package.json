@@ -11,6 +11,9 @@
     "node": "12.7.0",
     "npm": "6.10.0"
   },
+  "browserslist": [
+    "last 2 versions"
+  ],
   "lint-staged": {
     "*.js": [
       "semistandard --fix",

@@ -69,6 +69,24 @@
   }
 }
 
+// Visibility
+.hidden {
+  display: none;
+}
+
+.hidden-md {
+  @include breakpoint($mobile) {
+    display: none;
+  }
+}
+
+.visible-md {
+  @include breakpoint($mobile-up) {
+    display: none;
+  }
+}
+
+
 // Buttons
 .btn {
   align-items: center;
@@ -95,15 +113,13 @@
 .icon {
   background-position: center;
   background-repeat: no-repeat;
+  display: inline-block;
   height: $line-height-base * 1rem;
   width: $line-height-base * 1rem;
 }
 
 .icon--get-in-touch {
   background-image: url('/build/assets/images/get-in-touch.svg');
-  margin-right: 5px;
-  position: relative;
-  top: 1px;
 }
 
 // Miscellaneous

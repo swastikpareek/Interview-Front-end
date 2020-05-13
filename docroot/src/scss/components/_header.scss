@@ -25,5 +25,43 @@
     &.active {
       color: $white;
     }
+
+    .icon {
+      margin-right: $header-button-icon-spacing;
+      position: relative;
+      top: 1px;
+    }
+  }
+
+  &__right-menu {
+    .icon {
+      position: relative;
+      top: 3px;
+    }
+  }
+
+  &__hamburger-menu {
+    line-height: 0;
+    padding: $base-spacing * 0.25;
+  }
+
+  &__hamburger-menu-icon {
+    display: inline-block;
+    height: 1rem;
+    position: relative;
+    width: 1rem;
+
+    &::before {
+      background: $header-hamburger-icon-color;
+      box-shadow:
+        0 0.425em 0 0 $header-hamburger-icon-color,
+        0 0.85em 0 0 $header-hamburger-icon-color;
+      content: '';
+      height: 0.2em;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 1rem;
+    }
   }
 }

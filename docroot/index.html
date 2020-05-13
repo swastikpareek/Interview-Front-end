@@ -11,11 +11,14 @@
 <body>
   <header class="header">
     <div class="container d-flex flex-row align-center justify-space-between">
+      <div tab-index="0" class="header__hamburger-menu hidden-md" id="hamburger-icon">
+        <i class="header__hamburger-menu-icon"></i>
+      </div>
       <div class="header__logo">
         <img src="build/assets/images/logo.png" title="logo"/>
       </div>
-      <div>
-        <ul class="d-flex flex-row align-center header__account-menu">
+      <div class="header__right-menu">
+        <ul class="d-flex flex-row align-center header__account-menu visible-md">
           <li class="header__account-menu-items">
             <a class="header__account-menu-links" href="#">About</a>
           </li>
@@ -35,6 +38,9 @@
           </a>
           </li>
         </ul>
+        <a class="hidden-md" href="#">
+            <i class="icon icon--get-in-touch"></i>
+        </a>
       </div>
     </div>
   </header>
