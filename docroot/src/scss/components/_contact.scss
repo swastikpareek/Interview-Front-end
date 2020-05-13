@@ -7,12 +7,17 @@
   position: relative;
 
   &__image {
+    background-color: $image-placeholder-background-color;
     background-image: url('/build/assets/images/contact-box-bg.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: $contact-content-container-min-height;
+    min-height: $contact-content-container-min-height-mobile;
     padding-top: $contact-image-placehoder-spacing;
+
+    @include breakpoint($mobile) {
+      min-height: $contact-content-container-min-height;
+    }
   }
 
   &__content {
@@ -44,6 +49,14 @@
 
   &__form {
     margin-top: 30px;
+
+    .btn {
+      margin-top: $contact-form-submit-mobile-top-spacing;
+
+      @include breakpoint($mobile) {
+        margin-top: 0;
+      }
+    }
   }
 
   &__form-container {

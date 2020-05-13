@@ -25,6 +25,7 @@ h6 {
   font-weight: normal;
   line-height: $line-height-headline;
   margin-bottom: $heading-bottom-spacing;
+  margin-top: 0;
 }
 
 h1 {
@@ -49,6 +50,10 @@ h5 {
 
 h6 {
   font-size: 0.75rem;
+}
+
+p {
+  margin-bottom: $paragraph-bottom-spacing;
 }
 
 input,

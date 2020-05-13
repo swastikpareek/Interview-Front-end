@@ -1,5 +1,5 @@
 .call-out {
-  padding: $callout-container-lateral-spacing 0;
+  padding: $callout-container-lateral-spacing-mobile 0;
 
   &__headline {
     margin-bottom: $callout-headline-margin-bottom;
@@ -11,5 +11,9 @@
     img {
       max-width: 100%;
     }
+  }
+
+  @include breakpoint($mobile) {
+    padding: $callout-container-lateral-spacing 0;
   }
 }

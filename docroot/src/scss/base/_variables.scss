@@ -8,6 +8,7 @@ $black:                                               #2e2e2e;
 $jet-black:                                           #171513;
 $dark-grey:                                           #413d3c;
 $light-grey:                                          #f7f7f7;
+
 $primary:                                             #ec3c03;
 $healine-color:                                       #4d4845;
 $headline-sub-color:                                  #4b4743;
@@ -45,9 +46,11 @@ $input-background-color:                              $white;
 $input-padding:                                       $base-spacing * 0.25 $base-spacing * 0.5;
 $input-radius:                                        $base-spacing * 0.25;
 $textarea-min-height:                                 106px;
+$paragraph-bottom-spacing:                            $base-spacing;
 $container-width:                                     1200px;
 $container-sideline-padding:                          $base-spacing;
 $container-sideline-padding-small:                    $base-spacing-small;
+$image-placeholder-background-color:                  $dark-grey;
 
 // Header
 $header-bg-color:                                     $jet-black;
@@ -57,16 +60,21 @@ $header-lateral-padding:                              $base-spacing 0;
 
 // Bannner
 $banner-max-width:                                    $full-bleed-max-width;
+$bannner-sideline-spacing:                            $container-sideline-padding-small;
 $banner-image-placehoder-spacing:                     (697/1366) * 100%;
 $banner-headline-max-width:                           540px;
 $banner-image-min-height:                             600px;
 $banner-services-dimension:                           180px;
 $banner-services-lateral-spacing:                     $base-spacing;
+$banner-services-vertical-spacing-mobile:             $base-spacing * 0.5;
+$banner-services-vertical-padding-mobile:             $base-spacing * 0.5 $base-spacing * 0.75;
+$banner-services-graphics-right-spacing:              $base-spacing * 0.5;
 $banner-services-text-spacing:                        $base-spacing / 2;
 $banner-service-border:                               $dark-grey;
 $banner-text-color:                                   $white;
 
 // Callout
+$callout-container-lateral-spacing-mobile:            4 * $base-spacing;
 $callout-container-lateral-spacing:                   4.5 * $base-spacing;
 $callout-headline-margin-bottom:                      $base-spacing;
 
@@ -75,6 +83,7 @@ $testimonial-padding-y:                               $base-spacing * 4;
 $testimonial-padding-x:                               0;
 $testimonial-heading-bottom-spacing:                  $base-spacing * 2;
 $testimonial-grids-padding:                           $base-spacing;
+$testimonial-grids-vertical-mobile-spacing:           $base-spacing * 1.5;
 $testimonial-message-box-padding:                     $base-spacing * 2 $base-spacing *2 $base-spacing * 3 $base-spacing * 2;
 $testimonial-message-box-radius:                      1rem;
 $testimonial-message-box-bg-color:                    $white;
@@ -99,8 +108,11 @@ $contact-text-color:                                  $white;
 $contact-sub-heading-font-size:                       $font-size-large;
 $contact-sideline-spacing:                            $container-sideline-padding-small;
 $contact-content-container-width:                     800px + (2 * $contact-sideline-spacing);
+$contact-content-container-min-height-mobile:         675px;
 $contact-content-container-min-height:                480px;
+$contact-form-submit-mobile-top-spacing:              $base-spacing;
 
 // Footer
 $footer-bg-color:                                     $jet-black;
 $footer-text-color:                                   #8c8482;
+$footer-copyright-mobile-bottom-spacing:              $base-spacing;

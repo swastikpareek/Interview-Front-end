@@ -8,4 +8,12 @@
       margin-left: 10px;
     }
   }
+
+  &__copyright {
+    margin-bottom: $footer-copyright-mobile-bottom-spacing;
+
+    @include breakpoint($mobile) {
+      margin-bottom: 0;
+    }
+  }
 }

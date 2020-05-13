@@ -25,19 +25,6 @@
   flex-direction: row;
 }
 
-
-.flex-md-column {
-  @include breakpoint($mobile) {
-    flex-direction: column;
-  }
-}
-
-.flex-md-row {
-  @include breakpoint($mobile) {
-    flex-direction: row;
-  }
-}
-
 .justify-space-between {
   justify-content: space-between;
 }
@@ -56,6 +43,30 @@
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.flex-md-column {
+  @include breakpoint($mobile) {
+    flex-direction: column;
+  }
+}
+
+.flex-md-row {
+  @include breakpoint($mobile) {
+    flex-direction: row;
+  }
+}
+
+.justify-md-center {
+  @include breakpoint($mobile) {
+    justify-content: center;
+  }
+}
+
+.align-md-center {
+  @include breakpoint($mobile) {
+    align-items: center;
+  }
 }
 
 // Buttons

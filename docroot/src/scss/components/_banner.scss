@@ -7,6 +7,7 @@
   position: relative;
 
   &__image {
+    background-color: $image-placeholder-background-color;
     background-image: url('/build/assets/images/banner-image.jpg');
     background-position: center center;
     background-repeat: no-repeat;
@@ -18,25 +19,42 @@
   &__content {
     color: $banner-text-color;
     left: 50%;
+    padding: 0 $bannner-sideline-spacing;
     position: absolute;
     text-align: center;
     top: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
   }
 
   &__content-heading {
     color: inherit;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0;
     max-width: $banner-headline-max-width;
     text-align: center;
   }
 
   &__content-graphics {
     border: 1px solid $banner-service-border;
-    height: $banner-services-dimension;
-    margin: 0 $banner-services-lateral-spacing;
-    width: $banner-services-dimension;
+    margin: $banner-services-vertical-spacing-mobile 0;
+    padding: $banner-services-vertical-padding-mobile;
+
+    @include breakpoint($mobile) {
+      height: $banner-services-dimension;
+      margin: 0 $banner-services-lateral-spacing;
+      padding: 0;
+      width: $banner-services-dimension;
+    }
+  }
+
+  &__content-image {
+    margin-right: $banner-services-graphics-right-spacing;
+
+    @include breakpoint($mobile) {
+      margin-right: 0;
+    }
   }
 
   &__content-graphics-text {
