@@ -15,7 +15,7 @@ module.exports = () => {
   const copyjQuery = gulp.src([
     './node_modules/jquery/dist/jquery.min.js'
   ])
-    .pipe(gulp.dest('build/vendor'));
+    .pipe(gulp.dest('build/js/vendor'));
 
   return merge(copyAssets, copyjQuery);
 };

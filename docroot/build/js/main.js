@@ -1,1 +1,1 @@
-console.log("hello");
+!function(o){o("#hamburger-icon, .backdrop, #hamburger-close-icon").on("click",function(){o("body").toggleClass("menu-open")})}(jQuery);

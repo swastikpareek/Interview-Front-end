@@ -25,7 +25,7 @@ $font-size-large:                                     18px;
 $base-spacing:                                        20px;
 $base-spacing-small:                                  15px;
 $heading-bottom-spacing:                              $base-spacing;
-$transition:                                          0.2s ease-in all;
+$transition:                                          0.15s ease-in all;
 $button-padding-y:                                    $base-spacing;
 $button-padding-x:                                    $base-spacing / 5;
 $button-border-radius:                                1rem;
@@ -52,13 +52,33 @@ $container-sideline-padding:                          $base-spacing;
 $container-sideline-padding-small:                    $base-spacing-small;
 $image-placeholder-background-color:                  $dark-grey;
 
+// Backdrop
+$backdrop-background-color:                           rgba($dark-grey, 0.5);
+$backdrop-transition:                                 $transition;
+
 // Header
 $header-bg-color:                                     $jet-black;
 $header-links-text-color:                             #afa5a3;
 $header-links-spacing:                                $base-spacing;
-$header-lateral-padding:                              $base-spacing 0;
+$header-lateral-padding:                              $base-spacing;
+$header-links-transition:                             $transition;
 $header-button-icon-spacing:                          $base-spacing * 0.25;
 $header-hamburger-icon-color:                         $white;
+$header-hamburger-icon-dimension:                     16px;
+$header-hamburger-icon-padding:                       $base-spacing * 0.25;
+$header-hamburger-icon-dimension:                     16px;
+$header-hamburger-menu-bg-color:                      $white;
+$header-hamburger-menu-width:                         200px;
+$header-hamburger-menu-padding:                       $base-spacing * 0.5;
+$header-hamburger-menu-link-padding:                  $base-spacing * 0.25;
+$header-hamburger-menu-link-color:                    $dark-grey;
+$header-hamburger-menu-transition:                    $transition;
+$header-height:                                       $header-lateral-padding * 2 +  $header-hamburger-icon-dimension + $header-hamburger-icon-padding * 2;
+$header-hamburger-close-icon-padding:                 $base-spacing * 0.25;
+$header-hamburger-close-icon-color:                   $dark-grey;
+$header-hamburger-close-icon-alignment-x:             $base-spacing-small;
+$header-hamburger-close-icon-alignment-y:             $base-spacing-small;
+$header-hamburger-close-icon-size:                    16px;
 
 // Bannner
 $banner-max-width:                                    $full-bleed-max-width;

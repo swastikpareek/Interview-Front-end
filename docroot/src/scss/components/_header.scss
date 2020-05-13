@@ -1,6 +1,11 @@
 .header {
   background-color: $jet-black;
-  padding: $header-lateral-padding;
+  left: 0;
+  padding: $header-lateral-padding 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
 
   &__account-menu {
     margin: 0;
@@ -19,7 +24,7 @@
   &__account-menu-links {
     color: $header-links-text-color;
     text-decoration: none;
-    transition: $transition;
+    transition: $header-links-transition;
 
     &:hover,
     &.active {
@@ -34,6 +39,8 @@
   }
 
   &__right-menu {
+    line-height: 0;
+
     .icon {
       position: relative;
       top: 3px;
@@ -42,14 +49,14 @@
 
   &__hamburger-menu {
     line-height: 0;
-    padding: $base-spacing * 0.25;
+    padding: $header-hamburger-icon-padding;
   }
 
   &__hamburger-menu-icon {
     display: inline-block;
-    height: 1rem;
+    height: $header-hamburger-icon-dimension;
     position: relative;
-    width: 1rem;
+    width: $header-hamburger-icon-dimension;
 
     &::before {
       background: $header-hamburger-icon-color;
@@ -63,5 +70,64 @@
       top: 0;
       width: 1rem;
     }
+  }
+
+  &__stacked-menu-bar {
+    background-color: $header-hamburger-menu-bg-color;
+    bottom: 0;
+    left: 0;
+    left: -#{$header-hamburger-menu-width};
+    padding: $header-hamburger-menu-padding * 2 0 $header-hamburger-menu-padding;
+    position: fixed;
+    top: $header-height;
+    transition: $transition;
+    width: $header-hamburger-menu-width;
+    z-index: 2;
+
+    .menu-open & {
+      left: 0;
+    }
+
+    .header__account-menu-links {
+      color: $header-hamburger-menu-link-color;
+      display: inline-block;
+      padding: $header-hamburger-menu-link-padding 0;
+    }
+  }
+
+  &__close-btn {
+    padding: $header-hamburger-close-icon-padding;
+    position: absolute;
+    right: $header-hamburger-close-icon-alignment-x;
+    top: $header-hamburger-close-icon-alignment-y;
+  }
+
+  &__close-icon {
+    display: inline-block;
+    height: $header-hamburger-close-icon-size;
+    position: relative;
+    width: $header-hamburger-close-icon-size;
+
+    &::before,
+    &::after {
+      background-color: $header-hamburger-close-icon-color;
+      content: '';
+      height: $header-hamburger-close-icon-size;
+      left: $header-hamburger-close-icon-size / 2;
+      position: absolute;
+      width: 2px;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  @include breakpoint($mobile) {
+    position: relative;
   }
 }

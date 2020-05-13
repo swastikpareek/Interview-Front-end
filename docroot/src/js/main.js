@@ -2,8 +2,9 @@
  * Custom JS code
  */
 
-
-(function () {
-  // Write custom js code here
-  console.log('hello');
-})();
+(function ($) {
+  $('#hamburger-icon, .backdrop, #hamburger-close-icon')
+    .on('click', function () {
+      $('body').toggleClass('menu-open');
+    });
+})(jQuery);
