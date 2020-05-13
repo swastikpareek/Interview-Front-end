@@ -1,0 +1,72 @@
+.testimonials {
+  padding: $testimonial-padding-y $testimonial-padding-x;
+
+  &__headline {
+    margin-bottom: $testimonial-heading-bottom-spacing;
+    margin-top: 0;
+  }
+
+  &__container {
+    margin-left: -#{$testimonial-grids-padding};
+    margin-right: -#{$testimonial-grids-padding};
+  }
+
+  &__item {
+    flex-basis: 33.3333%;
+    padding: 0 $testimonial-grids-padding;
+  }
+
+  &__message-box {
+    background-color: $testimonial-message-box-bg-color;
+    border-radius: $testimonial-message-box-radius;
+    box-shadow: $testimonial-message-box-shadow;
+    color: $testimonial-text-color;
+    display: inline-block;
+    padding: $testimonial-message-box-padding;
+    position: relative;
+
+    p {
+      margin: 0;
+
+      &::before {
+        background-image: url('/build/assets/images/quotes.png');
+        content: '';
+        display: inline-block;
+        height: $testimonial-message-icon-height;
+        margin-right: $testimonial-message-icon-right-spacing;
+        width: $testimonial-message-icon-width;
+      }
+    }
+
+    &::after {
+      border-color: transparent transparent #{$testimonial-message-box-bg-color} #{$testimonial-message-box-bg-color};
+      border-style: solid;
+      border-width: $testimonial-message-box-tooltip-border-width;
+      bottom: $testimonial-message-box-tooltip-alignment-y;
+      box-shadow: $testimonial-message-box-tooltip-shadow;
+      content: '';
+      left: $testimonial-message-box-tooltip-alignment-x;
+      position: absolute;
+      transform: rotate(-60deg);
+      transform-origin: 0 0;
+    }
+
+  }
+
+  &__profile {
+    padding-top: $testimonial-profile-top-spacing;
+  }
+
+  &__profile-info {
+    padding-left: $testimonial-profile-info-left-spacing;
+  }
+
+  &__profile-name {
+    font-size: $testimonial-profile-name-size;
+  }
+
+  &__profile-bio {
+    color: $testimonial-text-color;
+    font-size: $testimonial-profile-bio-size;
+  }
+}

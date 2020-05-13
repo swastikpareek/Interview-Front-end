@@ -1,3 +1,4 @@
+// Layout
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -6,6 +7,7 @@
   padding-right: 20px;
 }
 
+// Flexbox
 .d-flex {
   display: flex;
 }
@@ -30,18 +32,24 @@
   align-items: center;
 }
 
+.flex-grow-full {
+  flex-grow: 1;
+}
+
+// Buttons
 .btn {
   align-items: center;
-  border-radius: 16px;
+  border-radius: $button-border-radius;
   color: $white !important;
   display: inline-flex;
-  padding: 4px 20px;
+  padding: $button-padding-x $button-padding-y;
 }
 
 .btn--primary {
   background-color: $primary;
 }
 
+// Icons
 .icon {
   background-position: center;
   background-repeat: no-repeat;
@@ -54,4 +62,13 @@
   margin-right: 5px;
   position: relative;
   top: 1px;
+}
+
+// Miscellaneous
+.light-bg {
+  background-color: $light-bg;
+}
+
+.text-center {
+  text-align: center;
 }

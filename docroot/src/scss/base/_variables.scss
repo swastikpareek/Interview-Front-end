@@ -3,40 +3,75 @@
  */
 
 // Colors
-$white:                                    #fff;
-$black:                                    #2e2e2e;
-$jet-black:                                #171513;
-$dark-grey:                                #413d3c;
-$light-grey:                               #f7f7f7;
-$primary:                                  #ec3c03;
-$healine-color:                            #4d4845;
-$headline-sub-color:                       #4b4743;
-$text-color-testimonial:                   #81736f;
-$text-color:                               #484440;
+$white:                                               #fff;
+$black:                                               #2e2e2e;
+$jet-black:                                           #171513;
+$dark-grey:                                           #413d3c;
+$light-grey:                                          #f7f7f7;
+$primary:                                             #ec3c03;
+$healine-color:                                       #4d4845;
+$headline-sub-color:                                  #4b4743;
+$text-color-testimonial:                              #81736f;
+$text-color:                                          #484440;
 
 // typography
-$font-family-base:                         'Lucida Sans', 'sans-serif';
-$line-height-base:                         1.5;
-$font-size-base:                           16px;
-$base-spacing:                             20px;
-$heading-bottom-spacing:                   $base-spacing;
-$transition:                               0.2s ease-in all;
+$font-family-base:                                    'Lucida Sans', 'sans-serif';
+$line-height-base:                                    1.5;
+$line-height-small:                                   1.333333;
+$font-size-base:                                      16px;
+$font-size-small:                                     14px;
+$font-size-large:                                     18px;
+$base-spacing:                                        20px;
+$heading-bottom-spacing:                              $base-spacing;
+$transition:                                          0.2s ease-in all;
+$button-padding-y:                                    $base-spacing;
+$button-padding-x:                                    $base-spacing / 5;
+$button-border-radius:                                1rem;
 
-// Body
-$body-bg:                                  $white;
+// Typography
+$body-bg:                                             $white;
+$body-text-color:                                     $text-color;
+$line-height-headline:                                $line-height-small;
+$light-bg:                                            $light-grey;
 
 
 // Header
-$header-links-text-color:                  #afa5a3;
-$header-links-spacing:                     $base-spacing;
-$header-lateral-padding:                   $base-spacing 0;
+$header-links-text-color:                             #afa5a3;
+$header-links-spacing:                                $base-spacing;
+$header-lateral-padding:                              $base-spacing 0;
 
 // Bannner
-$banner-max-width:                         1440px;
-$banner-immage-placehoder-spacing:         (697/1366) * 100%;
-$banner-headline-max-width:                540px;
-$banner-services-dimension:                180px;
-$banner-services-lateral-spacing:          $base-spacing;
-$banner-services-text-spacing:             $base-spacing / 2;
-$banner-service-border:                    $dark-grey;
-$banner-text-color:                        $white;
+$banner-max-width:                                    1440px;
+$banner-immage-placehoder-spacing:                    (697/1366) * 100%;
+$banner-headline-max-width:                           540px;
+$banner-services-dimension:                           180px;
+$banner-services-lateral-spacing:                     $base-spacing;
+$banner-services-text-spacing:                        $base-spacing / 2;
+$banner-service-border:                               $dark-grey;
+$banner-text-color:                                   $white;
+
+// Callout
+$callout-container-lateral-spacing:                   4.5 * $base-spacing;
+$callout-headline-margin-bottom:                      $base-spacing;
+
+// Testimonial
+$testimonial-padding-y:                               $base-spacing * 4;
+$testimonial-padding-x:                               0;
+$testimonial-heading-bottom-spacing:                  $base-spacing * 2;
+$testimonial-grids-padding:                           $base-spacing;
+$testimonial-message-box-padding:                     $base-spacing * 2 $base-spacing *2 $base-spacing * 3 $base-spacing * 2;
+$testimonial-message-box-radius:                      1rem;
+$testimonial-message-box-bg-color:                    $white;
+$testimonial-message-box-shadow:                      0 1px 3px rgba($dark-grey, 0.25);
+$testimonial-message-box-tooltip-shadow:              -2px 2px 2px 0 rgba($dark-grey, 0.15);
+$testimonial-message-box-tooltip-alignment-x:         40px;
+$testimonial-message-box-tooltip-alignment-y:         -40px;
+$testimonial-message-box-tooltip-border-width:        0 25px 40px 0;
+$testimonial-message-icon-width:                      25px;
+$testimonial-message-icon-height:                     20px;
+$testimonial-message-icon-right-spacing:              5px;
+$testimonial-profile-top-spacing:                     $base-spacing * 1.5;
+$testimonial-profile-info-left-spacing:               $base-spacing * 0.5;
+$testimonial-profile-name-size:                       $font-size-large;
+$testimonial-profile-bio-size:                        $font-size-small;
+$testimonial-text-color:                              $text-color-testimonial;
