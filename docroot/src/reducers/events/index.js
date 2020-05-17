@@ -3,10 +3,10 @@ import { ErrorMessages, UpdateNewAttendees } from '../../constants/events';
 /**
  * Main reducer functionn for EventsStore.
  */
-export const EventsListFactory = (initialState) => (state=initialState, action) => {
+export const EventsListFactory = (initialState) => (state = initialState, action) => {
   switch (action.type) {
     case 'SEARCH':
-     return {
+      return {
         ...state,
         searchText: action.text
       };
@@ -23,17 +23,17 @@ export const EventsListFactory = (initialState) => (state=initialState, action) 
     case 'UPDATE_SEATS':
       return _updateSeats(action, state);
     case 'LOADING_STATE':
-      return {...state, isEventLoading: action.loading}
+      return { ...state, isEventLoading: action.loading };
     case 'UPDATE_EVENTS':
-      return {...state, events: action.data}
+      return { ...state, events: action.data };
     default:
       return state;
   }
-}
+};
 
-function _updateText({key, value}, state) {
+function _updateText ({ key, value }, state) {
   const form = state.form.map((formItem) => {
-    formItem.opts.value = formItem.key === key ?  value : formItem.opts.value;
+    formItem.opts.value = formItem.key === key ? value : formItem.opts.value;
 
     return formItem;
   });
@@ -42,7 +42,7 @@ function _updateText({key, value}, state) {
   return state;
 }
 
-function _updateAttendee({val}, state) {
+function _updateAttendee ({ val }, state) {
   const newAttendees = parseInt(val, 10) - 1;
 
   // Add new form items
@@ -50,7 +50,7 @@ function _updateAttendee({val}, state) {
 
   // Remove extra form items
   state.form = state.form.filter((item) => {
-    if(!item.key.includes('attendee_no_')) {
+    if (!item.key.includes('attendee_no_')) {
       return true;
     }
 
@@ -62,15 +62,14 @@ function _updateAttendee({val}, state) {
   return state;
 }
 
-
-function _validateInput({key, value, seats}, state) {
+function _validateInput ({ key, value, seats }, state) {
   state.form = state.form.map((formItem) => {
-    if(formItem.key === key) {
-      switch(formItem.validation_type) {
+    if (formItem.key === key) {
+      switch (formItem.validation_type) {
         case 'name':
           if (value === '') {
             formItem.errorMessage = ErrorMessages.name.empty;
-          } else if(!(/^[a-zA-Z\s]*$/i.test(value))) {
+          } else if (!(/^[a-zA-Z\s]*$/i.test(value))) {
             formItem.errorMessage = ErrorMessages.name.invalid;
           } else {
             formItem.errorMessage = '';
@@ -79,38 +78,34 @@ function _validateInput({key, value, seats}, state) {
         case 'email':
           if (value === '') {
             formItem.errorMessage = ErrorMessages.email.empty;
-          }
-          else if(!(/^([a-zA-Z0-9_\-.]+)@([a-zA-Z0-9_\-.]+)\.([a-zA-Z]{2,5})$/i.test(value))) {
+          } else if (!(/^([a-zA-Z0-9_\-.]+)@([a-zA-Z0-9_\-.]+)\.([a-zA-Z]{2,5})$/i.test(value))) {
             formItem.errorMessage = ErrorMessages.email.invalid;
-          }
-          else {
+          } else {
             formItem.errorMessage = '';
           }
-        break;
+          break;
         case 'other':
           if (value === '') {
             formItem.errorMessage = ErrorMessages.seats.empty + formItem.title;
-          } else if(!(/^[a-zA-Z\s]*$/i.test(value))) {
+          } else if (!(/^[a-zA-Z\s]*$/i.test(value))) {
             formItem.errorMessage = ErrorMessages.other.invalid;
-          }
-          else {
-            formItem.errorMessage = '';
-          }
-        break;
-
-        case 'seats':
-          if (value === '') {
-            formItem.errorMessage = ErrorMessages.seats.empty;
-          } else if(seats < value) {
-            formItem.errorMessage = ErrorMessages.seats.invalid;
-          }
-          else {
+          } else {
             formItem.errorMessage = '';
           }
           break;
 
-          default:
-        }
+        case 'seats':
+          if (value === '') {
+            formItem.errorMessage = ErrorMessages.seats.empty;
+          } else if (seats < value) {
+            formItem.errorMessage = ErrorMessages.seats.invalid;
+          } else {
+            formItem.errorMessage = '';
+          }
+          break;
+
+        default:
+      }
     }
 
     return formItem;
@@ -119,9 +114,9 @@ function _validateInput({key, value, seats}, state) {
   return state;
 }
 
-function _resetForm(state) {
+function _resetForm (state) {
   state.form = state.form.map((formItem) => {
-    formItem.opts.value = formItem.key === 'attendee_seats' ? 2 : '' ;
+    formItem.opts.value = formItem.key === 'attendee_seats' ? 2 : '';
     formItem.errorMessage = '';
 
     return formItem;
@@ -132,11 +127,11 @@ function _resetForm(state) {
   return state;
 }
 
-function _logData({show}, state) {
+function _logData ({ show }, state) {
   state.showData = show;
 
-  if(show) {
-    console.group("Form Data");
+  if (show) {
+    console.group('Form Data');
     state.form.forEach((formItem) => {
       console.log(`${formItem.title} : ${formItem.opts.value}`);
     });
@@ -145,8 +140,8 @@ function _logData({show}, state) {
   return state;
 }
 
-function _updateSeats({eventId, seats}, state) {
-  state.events = state.events.map((ev) => ev.id === eventId ? {...ev, seats: parseInt(ev.seats,10) - parseInt(seats,10)} : {...ev} );
+function _updateSeats ({ eventId, seats }, state) {
+  state.events = state.events.map((ev) => ev.id === eventId ? { ...ev, seats: parseInt(ev.seats, 10) - parseInt(seats, 10) } : { ...ev });
 
   return state;
 }

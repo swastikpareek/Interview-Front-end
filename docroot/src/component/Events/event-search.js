@@ -1,16 +1,15 @@
 import React from 'react';
 
-export default function(props) {
-  const {onSearch} = props;
-  let _input;
+export default function (props) {
+  const { onSearch } = props;
 
-  const onChange = (e) => {
-    onSearch(_input.value);
-  }
+  const onChange = (event) => {
+    onSearch(event.target.value);
+  };
 
   return (
-    <div className="input-group mb-5">
-      <input type="text" className="form-control" placeholder="Search Events" onChange={onChange} ref={input => _input = input }/>
+    <div className='input-group mb-5'>
+      <input type='text' className='form-control' placeholder='Search Events' onChange={onChange} />
     </div>
-    )
+  );
 }

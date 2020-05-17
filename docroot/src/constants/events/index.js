@@ -17,7 +17,7 @@ export const ErrorMessages = {
     empty: 'Please enter the name of ',
     invalid: 'Only letters and spaces are allowed'
   }
-}
+};
 
 export const EventsInitialState = {
   events: [],
@@ -70,10 +70,10 @@ export const EventsInitialState = {
       name: 'atttendee_seats'
     }
   }]
-}
+};
 
 export const UpdateNewAttendees = (form, newAttendees) => {
-  [...Array(newAttendees)].forEach((v,i) => {
+  [...Array(newAttendees)].forEach((v, i) => {
     const key = i + 2;
 
     // If this attendee doesn't exist.
@@ -93,8 +93,7 @@ export const UpdateNewAttendees = (form, newAttendees) => {
   });
 
   return form;
-}
-
+};
 
 export const FormatEventsData = (EventsInitialState) => {
   let { form } = EventsInitialState;
@@ -105,5 +104,5 @@ export const FormatEventsData = (EventsInitialState) => {
   return {
     ...EventsInitialState,
     form
-   }
-}
+  };
+};

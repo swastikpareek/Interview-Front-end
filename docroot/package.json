@@ -10,6 +10,27 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "semistandard --fix",
+      "git add"
+    ]
+  },
+  "semistandard": {
+    "ignore": [
+      "build/js"
+    ],
+    "globals": [
+      "fetch",
+      "alert",
+      "console"
+    ]
+  },
   "engines": {
     "node": "12.7.0",
     "npm": "6.10.0"
@@ -38,12 +59,15 @@
   },
   "devDependencies": {
     "bootstrap": "^4.4.1",
+    "husky": "^4.2.5",
     "jquery": "^3.5.1",
     "json-server": "^0.16.1",
+    "lint-staged": "^10.2.2",
     "popper.js": "^1.16.1",
     "react-redux": "^7.2.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "semistandard": "^14.2.0"
   }
 }

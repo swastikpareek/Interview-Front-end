@@ -13,10 +13,9 @@ import 'bootstrap';
 // is used for matching dynamic segments in other
 // popular web frameworks like Rails and Express.
 
-
 ReactDOM.render(
   <React.StrictMode>
-      <App />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -7,12 +7,12 @@ import { EventsInitialState, FormatEventsData } from './constants/events';
 
 const EventsStore = createStore(EventsListFactory(FormatEventsData(EventsInitialState)));
 
-export default function App() {
+export default function App () {
   return (
     <div>
-     <Provider store={EventsStore} >
-       <EventsApp />
-     </Provider>
+      <Provider store={EventsStore}>
+        <EventsApp />
+      </Provider>
     </div>
   );
 }
