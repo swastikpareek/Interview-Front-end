@@ -15,6 +15,7 @@ export default function ({ item, onChange }) {
           className='form-control'
           onChange={change}
           data-key={item.key}
+          aria-label={item.title}
           {...item.opts}
         />
       </div>

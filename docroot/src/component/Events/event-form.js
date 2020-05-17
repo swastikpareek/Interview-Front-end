@@ -67,12 +67,12 @@ export default function EventForm ({ data }) {
           );
         })}
         <div className='d-flex justify-content-around mt-4'>
-          <button disabled={showData ? 'disabled' : ''} className='btn btn-primary' type='submit'> Submit </button>
+          <button disabled={showData ? 'disabled' : ''} className='btn btn-dark' type='submit'> Submit </button>
           <ConditionalView condition={showData}>
-            <button disabled className='btn btn-secondary'> Cancel </button>
+            <button disabled className='btn btn-default border'> Cancel </button>
           </ConditionalView>
           <ConditionalView condition={!showData}>
-            <Link onClick={reset} to='/' className='btn btn-secondary'> Cancel </Link>
+            <Link onClick={reset} to='/' className='btn btn-default border'> Cancel </Link>
           </ConditionalView>
         </div>
       </form>

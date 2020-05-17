@@ -9,7 +9,7 @@ export default function (props) {
 
   return (
     <div className='input-group mb-5'>
-      <input type='text' className='form-control' placeholder='Search Events' onChange={onChange} />
+      <input type='text' className='form-control' placeholder='Search Events' onChange={onChange} aria-label='Search Events' />
     </div>
   );
 }

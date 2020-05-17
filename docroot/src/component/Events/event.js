@@ -21,7 +21,7 @@ export default function (props) {
                 <div className='text-dark'> Sold Out! </div>
               </ConditionalView>
               <ConditionalView condition={data.seats > 0}>
-                <Link to={`/user/${data.id}`} className='btn btn-primary'>Book Now</Link>
+                <Link to={`/user/${data.id}`} className='btn btn-dark'>Book Now</Link>
               </ConditionalView>
             </div>
           </div>
