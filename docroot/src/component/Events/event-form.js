@@ -47,8 +47,10 @@ export default function EventForm ({ data }) {
       dispatch(validateInput(formItem.key, formItem.opts.value));
     });
 
+    // Check on next clock cycle
     setTimeout(function () {
       isValid = bookingForm.filter((formItem) => formItem.errorMessage !== '').length === 0;
+
       if (isValid) {
         dispatch(logData(true));
         dispatch(updateSeats(data.id, bookingForm.filter((formItem) => formItem.key === 'attendee_seats')[0].opts.value));

@@ -20,7 +20,7 @@ export default function (props) {
             <div key={formItem.key} className='p-2 mb-3'> <b>{formItem.title}</b> : {formItem.opts.value} </div>
           );
         })}
-        <button className='btn btn-primary' onClick={submitAnother}> Another Entry </button>
+        <button className='btn btn-dark' onClick={submitAnother}> Another Entry </button>
       </div>
     </div>
   );
