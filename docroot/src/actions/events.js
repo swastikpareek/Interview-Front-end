@@ -42,11 +42,24 @@ export const logData = (show) => {
   }
 }
 
-
 export const updateSeats = (eventId, seats) => {
   return {
      type: 'UPDATE_SEATS',
      eventId,
      seats
+  }
+}
+
+export const setLoadingState = (loading) => {
+  return {
+     type: 'LOADING_STATE',
+     loading
+  }
+}
+
+export const setEventsData = (data) => {
+  return {
+     type: 'UPDATE_EVENTS',
+     data
   }
 }

@@ -19,6 +19,10 @@ export const EventsListFactory = (initialState) => (state=initialState, action) 
       return _logData(action, state);
     case 'UPDATE_SEATS':
       return _updateSeats(action, state);
+    case 'LOADING_STATE':
+      return {...state, isEventLoading: action.loading}
+    case 'UPDATE_EVENTS':
+      return {...state, events: action.data}
     default:
       return state;
   }

@@ -1,3 +1,5 @@
+export const EventsURL = 'http://127.0.0.1:3001/events';
+
 export const ErrorMessages = {
   name: {
     empty: 'Please enter your name',
@@ -18,55 +20,8 @@ export const ErrorMessages = {
 }
 
 export const EventsInitialState = {
-  events: [{
-    "id": "event_id_1",
-    "date": "23 May 2020",
-    "title": "Go Crazy",
-    "img": "https://i.picsum.photos/id/225/200/200.jpg",
-    "seats":3
-  },{
-    "id": "event_id_2",
-    "date": "23 May 2020",
-    "title": "Beat the heat",
-    "img": "https://i.picsum.photos/id/228/200/200.jpg",
-    "seats":21
-  },{
-    "id": "event_id_3",
-    "date": "23 May 2020",
-    "title": "Runtastic",
-    "img": "https://i.picsum.photos/id/227/200/200.jpg",
-    "seats":0
-  },{
-    "id": "event_id_4",
-    "date": "23 May 2020",
-    "title": "Smile it away",
-    "img": "https://i.picsum.photos/id/228/200/200.jpg",
-    "seats":16
-  },{
-    "id": "event_id_5",
-    "date": "23 May 2020",
-    "title": "Drive it like anything",
-    "img": "https://i.picsum.photos/id/229/200/200.jpg",
-    "seats":23
-  },{
-    "id": "event_id_6",
-    "date": "23 May 2020",
-    "title": "Dance for life",
-    "img": "https://i.picsum.photos/id/230/200/200.jpg",
-    "seats":11
-  },{
-    "id": "event_id_7",
-    "date": "23 May 2020",
-    "title": "Fast and Furious",
-    "img": "https://i.picsum.photos/id/231/200/200.jpg",
-    "seats":0
-  },{
-    "id": "event_id_8",
-    "date": "23 May 2020",
-    "title": "Slow and steady",
-    "img": "https://i.picsum.photos/id/232/200/200.jpg",
-    "seats":19
-  }  ],
+  events: [],
+  isEventLoading: false,
   searchText: '',
   showData: false,
   form: [{
@@ -138,4 +93,17 @@ export const UpdateNewAttendees = (form, newAttendees) => {
   });
 
   return form;
+}
+
+
+export const FormatEventsData = (EventsInitialState) => {
+  let { form } = EventsInitialState;
+  const newAttendees = parseInt(form.filter((formItem) => formItem.key === 'attendee_seats')[0].opts.value, 10);
+
+  form = UpdateNewAttendees(form, newAttendees);
+
+  return {
+    ...EventsInitialState,
+    form
+   }
 }
