@@ -1,5 +1,8 @@
 import { ErrorMessages, UpdateNewAttendees } from '../../constants/events';
 
+/**
+ * Main reducer functionn for EventsStore.
+ */
 export const EventsListFactory = (initialState) => (state=initialState, action) => {
   switch (action.type) {
     case 'SEARCH':

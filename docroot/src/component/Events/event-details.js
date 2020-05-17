@@ -5,7 +5,6 @@ import ConditionalView from '../../component/ConditionalView';
 import { useParams } from "react-router-dom";
 import ShowEventFormData from './event-form-data';
 
-
 export default function(props) {
   const { id } = useParams();
   const event = useSelector(state => state.events).filter(event => event.id === id)[0];

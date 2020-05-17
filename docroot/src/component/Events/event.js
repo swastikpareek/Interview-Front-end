@@ -9,7 +9,7 @@ export default function(props) {
     <div className="col-md-6 col-lg-4 col-xl-3 pb-4">
       <div className="card border">
         <div className="card-body">
-          <h4> {data.title} </h4>
+          <h4 className="text-center mb-3"> {data.title} </h4>
           <div className="d-flex flex-column flex-sm-row">
             <div className="p-3 border col">
               <img alt={data.title} src={data.img} className="w-100 rounded-circle"/>

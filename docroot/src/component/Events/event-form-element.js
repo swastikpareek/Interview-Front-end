@@ -1,5 +1,4 @@
 import React from 'react';
-// import ConditionalView from '../../component/ConditionalView';
 
 export default function({item, onChange}) {
   const change = (event) => {

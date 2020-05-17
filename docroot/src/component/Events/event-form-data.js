@@ -2,7 +2,6 @@ import React from 'react';
 import {useDispatch} from 'react-redux';
 import {resetForm, logData} from '../../actions/events';
 
-
 export default function(props) {
   const { data } = props;
   const dispatch = useDispatch();

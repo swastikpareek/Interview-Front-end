@@ -15,8 +15,10 @@ export default function EventForm ({data}) {
   }
 
   const validate = (event) => {
+    // Explicit condition check for the attendee seats
     if(event.target.max && parseInt(event.target.max, 10) < parseInt(event.target.value, 10)) {
       alert(`Can't place value greater than ${event.target.max}`);
+
       return;
     }
 
@@ -35,7 +37,6 @@ export default function EventForm ({data}) {
     } else {
       dispatch(validateInput(event.target.dataset.key, event.target.value));
     }
-
   }
 
   const handleSubmit = (event) => {
